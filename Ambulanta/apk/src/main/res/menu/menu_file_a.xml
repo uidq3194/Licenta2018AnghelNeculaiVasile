@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/id1"
+        android:title="Setare disponibilitate"/>
+    <!--android:icon="@drawable/subitem_i3" />-->
+    <item android:id="@+id/id2"
+        android:title="Cerinte catre dispecer"/>
+    <!--android:icon="@drawable/subitem_i3" />-->
+    <item android:id="@+id/id3"
+        android:title="Delogare"/>
+    <!--android:icon="@drawable/subitem_i3" />-->
+</menu>

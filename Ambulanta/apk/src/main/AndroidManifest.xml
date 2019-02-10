@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sda.pacient.apk"> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application>
+        <activity
+            android:name="com.sda.ambulanta.apk.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Serviciul de Ambulante"
+            android:screenOrientation="portrait">
+            <intent-filter android:order="1">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="sda.com"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sda.ambulanta.apk.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="SdA - Register"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.sda.ambulanta.apk.AmbulantaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="SdA - Ambulante"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.sda.ambulanta.apk.menu.AvailableActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="SdA - Disponibilitate"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.sda.ambulanta.apk.menu.SpecialRequirementsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="SdA - Cerinte catre dispecer"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.sda.ambulanta.apk.UrgenteActivity"></activity>
+    </application>
+
+</manifest>
