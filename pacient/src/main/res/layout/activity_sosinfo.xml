@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutSOS"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.sda.pacient.apk.SOSinfoActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_cyclic7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/heartBeatBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Puls"
+                android:textAppearance="@style/CalcResultStyle1" />
+
+            <Button
+                android:id="@+id/consciousBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Constient"
+                android:textAppearance="@style/CalcResultStyle1" />
+
+            <Button
+                android:id="@+id/stableBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Stabil"
+                android:textAppearance="@style/CalcResultStyle1" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/bodyTemperatureBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Temperatura"
+                android:textAppearance="@style/CalcResultStyle1" />
+
+            <Button
+                android:id="@+id/blodPressureBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Tensiune"
+                android:textAppearance="@style/CalcResultStyle1" />
+
+            <Button
+                android:id="@+id/pictureBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Imobilizat"
+                android:textAppearance="@style/CalcResultStyle1" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/otherBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Alte detalii"
+                android:textAppearance="@style/CalcResultStyle1" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/sendInfoBTN"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/send_info"
+        android:textStyle="bold"
+        android:background="#8A0000"
+        android:textSize="16sp"
+        android:textColor="#f8fdf9"/>
+
+</RelativeLayout>

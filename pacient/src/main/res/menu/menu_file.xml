@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/i1"
+        android:title="Setari">
+        <!--android:icon="@drawable/item" >-->
+
+    <!-- "item" submenu -->
+    <menu>
+        <item android:id="@+id/i2"
+            android:title="Schimbare parola"/>
+            <!--android:icon="@drawable/subitem_i2"/>-->
+        <item android:id="@+id/i3"
+            android:title="Schimbare resedinta"/>
+        <!--android:icon="@drawable/subitem_i3" />-->
+        <item android:id="@+id/i4"
+            android:title="Update Stare de sanatate"/>
+        <!--android:icon="@drawable/subitem_i3" />-->
+    </menu>
+    </item>
+    <item android:id="@+id/i5"
+        android:title="Blocare cont (telefon pierdut)"/>
+    <!--android:icon="@drawable/subitem_i3" />-->
+    <item android:id="@+id/i7"
+        android:title="Deconectare"/>
+    <!--android:icon="@drawable/subitem_i3" />-->
+</menu>

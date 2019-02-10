@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutAddrUpdate"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.sda.pacient.apk.menu.ChangeAddressActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_AddrUpdate"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/AddrUpdateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adresa veche : "
+                android:textColor="@color/pink"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/cnpAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CNP"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/uidAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/passwordAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/newAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update - Adresa"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/NewAddressBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Trimite"
+                android:textAppearance="@style/CalcResultStyle1" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

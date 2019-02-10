@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutConscious"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.sda.pacient.apk.ConsciousActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_Immo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/ImmoYESBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Imobilizat : DA"
+                android:textAppearance="@style/CalcResultStyle1" />
+
+            <Button
+                android:id="@+id/ImmoNOBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Imobilizat : NU"
+                android:textAppearance="@style/CalcResultStyle1" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

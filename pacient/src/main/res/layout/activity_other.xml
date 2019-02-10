@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutOther"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.sda.pacient.apk.OtherActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_Stable"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/OtherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Alte informatii..."
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="121dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/OrtherSendBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_color_sos"
+                android:color="#f8fdf9"
+                android:text="Trimite"
+                android:textAppearance="@style/CalcResultStyle1" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>
